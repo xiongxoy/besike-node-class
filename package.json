@@ -1,0 +1,15 @@
+{
+  "name": "Class",
+  "version": "0.0.1",
+  "description": "A basic class system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Zhou Xiong",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
