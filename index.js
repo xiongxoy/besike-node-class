@@ -14,7 +14,9 @@ function Class(child_obj, parent_ctor) {
     }
   }
 
+  child_ctor.__super__ = parent_ctor || Object;
   __extend(child_ctor, parent_ctor);
+
   return child_ctor;
 }
 
@@ -25,6 +27,7 @@ function __extend(child_ctor, parent_ctor) {
     }
     ctor.prototype = parent_ctor.prototype;
     child_ctor.prototype = new ctor;
+
   }
 }
 
